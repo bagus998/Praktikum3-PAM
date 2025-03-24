@@ -1,5 +1,6 @@
 package com.example.praktikum3
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.View
 import android.widget.Button
@@ -33,6 +34,8 @@ class MainActivity : AppCompatActivity() {
                     Toast.LENGTH_SHORT).show()
             } else if (email == "BagusSetiawan@gmail.com" && password == "235150707111057"){
                 Toast.makeText(this@MainActivity, "Berhasil LogIn", Toast.LENGTH_SHORT).show()
+                startActivity(Intent(this, mr_head:: class.java))
+
             } else {
                 Toast.makeText(this@MainActivity, "Email atau Password salah", Toast.LENGTH_SHORT).show()
             }
